@@ -27,6 +27,3 @@ javascript:(function(){
 
     popupCenter(newUrl + id, "YouTube");
 })();
-
-
-// https://www.youtube.com/embed/q1fsBWLpYW4?start=51.816787
