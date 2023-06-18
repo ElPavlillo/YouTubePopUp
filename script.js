@@ -18,5 +18,15 @@ javascript:(function(){
         id = id.substring(0, id.search("&"))
     }
 
-    popupCenter(newUrl + id, "YouTube")
+    ytplayer = document.getElementById("movie_player");
+    time = ytplayer.getCurrentTime().toString();
+
+    if(time.search("\\.") != -1) {
+        id = id + "?start=" + time.substring(0,time.search("\\."))
+    }
+
+    popupCenter(newUrl + id, "YouTube");
 })();
+
+
+// https://www.youtube.com/embed/q1fsBWLpYW4?start=51.816787
