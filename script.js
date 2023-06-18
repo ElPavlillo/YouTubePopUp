@@ -14,5 +14,9 @@ javascript:(function(){
     url = getCurrentURL();
     id = url.substring(url.search("v=") + 2);
 
+    if (id.search("&") != -1) {
+        id = id.substring(0, id.search("&"))
+    }
+
     popupCenter(newUrl + id, "YouTube")
 })();
