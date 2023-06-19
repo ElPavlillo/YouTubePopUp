@@ -11,8 +11,8 @@ javascript:(function(){
         var top = (screen.height/2)-(h/2);
         return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
     }
-    
-    ytplayer.pauseVideo()
+  
+    ytplayer.pauseVideo();
 
     url = getCurrentURL();
     id = url.substring(url.search("v=") + 2);
