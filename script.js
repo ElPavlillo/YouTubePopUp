@@ -1,5 +1,6 @@
 javascript:(function(){
     const newUrl = "https://www.youtube.com/embed/";
+    ytplayer = document.getElementById("movie_player");
 
     function getCurrentURL () {
         return window.location.href
@@ -10,6 +11,8 @@ javascript:(function(){
         var top = (screen.height/2)-(h/2);
         return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
     }
+    
+    ytplayer.pauseVideo()
 
     url = getCurrentURL();
     id = url.substring(url.search("v=") + 2);
@@ -18,7 +21,6 @@ javascript:(function(){
         id = id.substring(0, id.search("&"))
     }
 
-    ytplayer = document.getElementById("movie_player");
     time = ytplayer.getCurrentTime().toString();
 
     if(time.search("\\.") != -1) {
