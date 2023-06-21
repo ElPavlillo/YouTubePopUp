@@ -7,3 +7,5 @@ This script is made as a bookmarklet that opens a youtube video popup style in a
 ## Usage
 
 Create a bookmark, give it a name and copy all the code on the URL field
+
+![alt text](https://github.com/ElPavlillo/YouTubePopUp/blob/master/images/example2.png?raw=true)
